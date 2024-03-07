@@ -1,0 +1,210 @@
+
+ 
+    #loginContainer {
+        width: 80%;
+        max-width: 500px;
+        border: 1px solid grey;
+        padding: 100px;
+        background-color: #ddd;
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+   
+        
+      }
+
+  
+      h2, h1 {
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        margin: 0;
+        flex: 1; 
+      }
+  
+      #login {
+        background-color: #2196f3;
+        border: none;
+        color: white;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 55px;
+        transition: background-color 0.3s ease;
+        margin: 40px;
+      }
+  
+      #login:hover {
+        background-color: #0c4675;
+      }
+  
+      img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px; 
+      }
+   
+  
+      body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+  
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        height: 12.5vh;
+      }
+  
+      .logo {
+    
+        height: auto;
+      }
+  
+    
+      .project-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+  
+  
+     
+   
+  
+   
+  
+      .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .app_title {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 6vh;
+        font-size: 2.5vh;
+        font-weight: bold;
+        padding-top: 0.6vh;
+        text-align: center;
+        background-color: #2196f3;
+    }
+  
+    .sangrahi-viewer{
+      padding: 12px 25px;
+      border: none;
+      border-radius: 55px;
+      text-align: center;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .pms{
+        padding: 12px 25px;
+        border: none;
+        border-radius: 55px;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: #ff5722;
+        color: white;
+ 
+      }
+
+    .sangrahi-viewer:hover {
+      background-color: #2980b9; 
+    }
+  
+    #footer {
+      background-color: rgb(12, 30, 129);
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      text-align: center;
+      font-size: x-large;
+      margin-top: auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+ 
+ 
+     .header-container{
+      width: fit-content;
+      height: 10vh;
+     }
+     #loginContainer {
+      width: 80%;
+      max-width: 500px;
+      border: 1px solid grey;
+      padding: 100px;
+      background-color: #ddd;
+      text-align: center;
+      margin: auto;
+      margin-top: 10%;
+      flex: 1;
+      
+    }
+      .app_title {
+        display: block;
+        position: relative;
+     
+        height: 8.5vh;
+        font-size: 2.5vh;
+        font-weight: bold;
+        padding-top: 0.6vh;
+        text-align: center;
+        background-color: #2196f3;
+    }
+    
+      .logo-container {
+        margin-bottom: 10px;
+      }
+    
+      .project-title h1 {
+        font-size: 18px;
+        display: none;
+      }
+    
+      .project-title:before {
+        content: 'Sangrahi PMS';
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    
+
+    
+      #login {
+        padding: 12px 20px;
+        margin: 20px 0;
+      }
+    
+      .sangrahi-viewer {
+        padding: 10px 10px;
+        font-size: 16px;
+      }
+    
+      #footer {
+        font-size: 20px;
+        margin-top: auto;
+      }
+    }
+    

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+
+
+</head>
+
+<body>
+
+  <div class="header-container">
+    <div class="logo-container">
+      <img class="logo" src="{{url_for('static',filename='img/splash_logo3.png')}}" alt="ISRO Logo" >
+    </div>
+    <div class="project-title">
+      <h1>Sangrahi<br/>Project Management System</h1>
+    </div>
+    <div class="logo-container">
+      <img class="logo" src="{{url_for('static',filename='img/isro.png')}}" alt="ISRO Logo">
+    </div>
+  </div>
+
+
+  <div class="app_title">
+    <div style="display: flex;flex-direction: row;justify-content:space-around;padding: 10px;">
+    
+      <button class="pms">Sangrahi PMS</button>
+      <button class="sangrahi-viewer" id="viewer">Sangrahi Viewer</button>
+      <button class="sangrahi-viewer" id="download">Sangrahi Mobile APK</button>
+    
+    </div>
+  </div>
+  
+
+  <div id="loginContainer">
+    <div style="margin: 10px;">
+      <img src="{{url_for('static',filename='img/vedas_logo.png')}}"  height="100">
+      <h1>Please Click On Below Button to Login</h1>
+      <button id="login">Login</button>
+    </div>
+  </div>
+
+  <div id="footer" style="background-color: rgb(12, 30, 129); color: rgb(255, 255, 255);">
+    © Copyright 2024 VEDAS, SAC, ISRO.
+  </div>
+
+  <script>
+    function redirectTologin() {
+      var login = "https://vedas.sac.gov.in/access/login.html?clientId=10";
+      window.location.href = login;
+    }
+
+    document.getElementById("login").addEventListener("click", redirectTologin);
+
+    
+    
+    
+    function redirectToviewer() {
+      var app = "https://vedas.sac.gov.in/data-collection/";
+      window.location.href = app;
+    }
+
+    document.getElementById("viewer").addEventListener("click", redirectToviewer);
+
+    
+    
+    
+    
+    function redirectTodownloadapp() {
+      var download = "https://vedas.sac.gov.in/udc_project_management/";
+      window.location.href = download;
+    }
+
+    document.getElementById("download").addEventListener("click", redirectTodownloadapp);
+  </script>
+
+</body>
+
+</html>
+
